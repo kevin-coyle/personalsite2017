@@ -3,4 +3,5 @@ machine:
     version: 7.1.3
 dependencies:
   post:
+    - cp .env.example .env
     - php artisan key:generate
