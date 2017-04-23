@@ -15,12 +15,47 @@
                     </div>
                 </div>
             </section>
-            section.section
-            <section class="section">
+            <section class="section what-i-use">
                 <div class="container">
                     <div class="columns">
                         <div class="column">
-                            <div class="section recent-updates">
+                            <h2 class="title is-3">
+                                I currently use:
+                            </h2>
+                            <ul>
+                                <li>
+                                    <article class="i-use__icon">
+                                        <img src="/images/laravel-l-slant.png" alt="Laravel Logo">
+                                        <h2 class="title">Laravel</h2>
+                                    </article>
+                                    </li>
+                                <li>
+                                    <article>
+                                        <img src="/images/nodejs-icon.svg" alt="NodeJS">
+                                        <h2 class="title">NodeJS</h2>
+                                    </article>
+                                </li>
+                                <li>
+                                    <article>
+                                        <img src="/images/drupal_logo.png" alt="Drupal Logo">
+                                        <h2 class="title">Drupal 7 & 8</h2>
+                                    </article>
+                                </li>
+                                <li>
+                                    <article>
+                                        <img src="/images/docker.svg" alt="Docker Logo">
+                                        <h2 class="title">Docker</h2>
+                                    </article>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section recent-updates">
+                <div class="container">
+                    <div class="columns">
+                        <div class="column">
                                 <h1 class="title">Recent Updates</h1>
                                 <ul class="columns">
                                     @for ($i = 0; $i < 3; $i++)
@@ -36,7 +71,6 @@
                                         </li>
                                     @endfor
                                 </ul>
-                            </div>
                         </div>
                     </div>
                 </div>

@@ -1,0 +1,29 @@
+.what-i-use {
+  ul {
+    @include tablet {
+      display: flex;
+      justify-content: space-between;
+    }
+    li:not(:first-child) {
+      margin-top: 3rem;
+      @include tablet {
+        margin-top: 0;
+      }
+    }
+  }
+  article {
+    @include tablet {
+      text-align: left;
+    }
+    text-align: center;
+  }
+  img {
+    text-align: center;
+    height: 10rem;
+    width: auto;
+  }
+  h2 {
+    margin-top: 2rem;
+    text-align: center;
+  }
+}
