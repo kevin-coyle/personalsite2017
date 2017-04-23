@@ -1,0 +1,16 @@
+.main-navigation {
+  ul {
+    display: flex;
+    @include tablet {
+      justify-content: flex-end;
+    }
+    li {
+      &.active {
+        font-weight: $weight-bold;
+      }
+      &:not(:last-child) {
+        margin-right: 1rem;
+      }
+    }
+  }
+}

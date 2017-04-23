@@ -1,9 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text:700|Open+Sans:400,600');
+@import 'variables';
+@import 'node_modules/bulma/bulma';
 
-// Fonts
-@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
-
-// Variables
-@import "variables";
-
-// Bootstrap
-@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+html, body {
+  height: 100%;
+}
+.is-hero {
+  background: darken($primary, 10%);
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 20rem;
+  h1.title, h2.subtitle {
+    color: $white;
+  }
+}
+@import 'header';
