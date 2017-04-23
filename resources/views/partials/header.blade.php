@@ -15,6 +15,25 @@
                             <li><a href="/contact">Contact Me</a></li>
                         </ul>
                     </nav>
+                    <div class="social-menu">
+                        <ul>
+                            <li>
+                                <a href="https://github.com/kevin-coyle">
+                                    <i class="fa fa-github-square" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/kevincoyle">
+                                    <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://drupal.org/u/kevla">
+                                    <i class="fa fa-drupal" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </header>
