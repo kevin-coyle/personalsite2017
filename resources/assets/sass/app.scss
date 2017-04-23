@@ -12,8 +12,13 @@ html, body {
   flex-direction: column;
   justify-content: center;
   min-height: 20rem;
-  h1.title, h2.subtitle {
+  h2.subtitle {
     color: $white;
+    font-size: 2rem;
+  }
+  h1.title {
+    color: $secondary;
+    font-size: 2.5rem;
   }
 }
 @import 'header';
