@@ -1,0 +1,13 @@
+branch-defaults:
+  master:
+    environment: personalsite2017-prod
+    group_suffix: null
+global:
+  application_name: personalsite2017
+  branch: null
+  default_ec2_keyname: aws-drutek
+  default_platform: PHP 7.0
+  default_region: eu-west-1
+  profile: null
+  repository: null
+  sc: git

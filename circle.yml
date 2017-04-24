@@ -3,10 +3,13 @@ machine:
     version: 7.1.3
 dependencies:
   post:
-    - cp .env.heroku .env
+    - cp .env.aws .env
     - php artisan key:generate
+  pre:
+    - sudo pip install awsebcli
 deployment:
-  staging:
+  production:
     branch: master
-    heroku:
-      appname: infinite-temple-60838
+    commands:
+      - bash ./setup-eb.sh
+      - eb deploy
