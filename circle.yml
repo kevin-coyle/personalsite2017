@@ -5,3 +5,5 @@ dependencies:
   post:
     - cp .env.heroku .env
     - php artisan key:generate
+  heroku:
+    appname: infinite-temple-60838
