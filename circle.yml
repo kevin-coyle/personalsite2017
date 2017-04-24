@@ -6,8 +6,7 @@ dependencies:
     - cp .env.aws .env
     - php artisan key:generate
   pre:
-    - sudo apt-get install libyaml-dev libpython2.7-dev
-    - sudo pip install awsebcli
+    - sudo pip install 'awsebcli==3.7.4' --force-reinstall
 deployment:
   production:
     branch: master
