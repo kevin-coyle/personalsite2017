@@ -3,9 +3,18 @@
     <div class="page-about">
         @include('partials.header')
         <main>
+            <div class="page-title">
+                <div class="container">
+                    <div class="columns">
+                        <div class="column">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
             <section class="section">
                 <div class="container">
-                    <columns>
+                    <div class="columns">
                         <div class="column">
                             <article>
                                 <h1 class="title is-2">
@@ -44,7 +53,7 @@
                                 </div>
                             </article>
                         </div>
-                    </columns>
+                    </div>
                 </div>
             </section>
         </main>

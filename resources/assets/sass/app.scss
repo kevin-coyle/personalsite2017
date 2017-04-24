@@ -23,3 +23,9 @@ html, body {
 }
 @import 'header';
 @import 'home/home';
+.page-title {
+  background: darken($primary, 10%);
+  .title {
+    color: $secondary;
+  }
+}
