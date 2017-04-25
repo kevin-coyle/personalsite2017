@@ -2,9 +2,9 @@
     <div class="container">
         <header class="main-header">
             <div class="columns">
-                <div class="column">
+                <div class="column logo">
                     <a href="/"><h1 class="title is-1">Kevin Coyle</h1></a>
-                    <h2 class="subtitle">Freelance Web Development Consultant</h2>
+                    <h2 class="subtitle logo__subtitle">Freelance Web Development Consultant</h2>
                 </div>
                 <div class="column">
                     <nav class="main-navigation">

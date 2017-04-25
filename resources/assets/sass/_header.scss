@@ -25,7 +25,7 @@
       font-size: 1.5rem;
       transition: 0.5s color;
       &:hover {
-        color: $secondary;
+        color: $tertiary;
       }
       @include tablet {
         font-size: 3rem;
