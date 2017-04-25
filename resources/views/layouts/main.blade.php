@@ -9,6 +9,7 @@
             'csrfToken': "{{csrf_token()}}"
         }
     </script>
+    <title>Kevin Coyle - Freelance Development Consultant</title>
 </head>
 <body>
 @yield('content')
