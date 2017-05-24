@@ -20,10 +20,10 @@
                                 <ul>
                                     @foreach($cv->experiences as $experience)
                                     <li>
-                                        <article class="cv__experience">
+                                        <article class="experience__item">
                                             <header>
                                                 <h1 class="title is-5">{{$experience->title}}</h1>
-                                                <div class="cv__experience__dates">
+                                                <div class="experience__item__dates">
                                                     <span><strong>Start Date:</strong> {{$experience->start_date->format('M Y')}}</span>
                                                     @if($experience->end_date)<span><strong>End Date:</strong>{{$experience->end_date->format('M Y')}}</span>@endif
                                                 </div>

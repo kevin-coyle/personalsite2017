@@ -1,0 +1,19 @@
+.page-cv {
+  .experience {
+    &__item {
+      margin: {
+        top: 1rem;
+        bottom: 2rem;
+      }
+      &__dates {
+        margin-bottom: 0.5rem;
+        span {
+          &:not(:first-child) {
+            margin-left: 1rem;
+          }
+        }
+
+      }
+    }
+  }
+}
