@@ -2,13 +2,15 @@
 
 
 namespace App\CV;
-
+use App\Experience;
 
 class CV
 {
     public $about;
+    public $experiences;
     public function __construct() {
         $this->about = $this->about();
+        $this->experiences = Experience::all();
     }
 
     /**
@@ -22,5 +24,14 @@ class CV
 
     public function experience() {
         return '';
+    }
+
+    public function qualifications() {
+        return [
+            [
+                'company' => 'Acquia',
+                'description' => 'Acquia Certified Drupal Developer 2014'
+            ]
+        ];
     }
 }
