@@ -24,8 +24,8 @@
                                             <header>
                                                 <h1 class="title is-5">{{$experience->title}}</h1>
                                                 <div class="cv__experience__dates">
-                                                    <span><strong>Start Date:</strong> {{$experience->start_date}}</span>
-                                                    @if($experience->end_date)<span><strong>End Date:</strong>{{$experience->end_date}}</span>@endif
+                                                    <span><strong>Start Date:</strong> {{$experience->start_date->format('M Y')}}</span>
+                                                    @if($experience->end_date)<span><strong>End Date:</strong>{{$experience->end_date->format('M Y')}}</span>@endif
                                                 </div>
                                             </header>
                                             <div class="content">
@@ -42,7 +42,7 @@
                                     @foreach($cv->qualifications() as $qualification)
                                     <li>
                                         <article>
-                                            <h2>{{$qualification['company']}}</h2>
+                                            <h2 class="title is-5">{{$qualification['company']}}</h2>
                                             <p>{{$qualification['description']}}</p>
                                         </article>
                                     </li>
@@ -50,7 +50,45 @@
                                 </ul>
                             </section>
                             <section class="section publications">
-                                <h1 class="title is-3"></h1>
+                                <h1 class="title is-3">Publications</h1>
+                                <ul>
+                                    @foreach($cv->publications as $publication)
+                                    <li>
+                                        {{$publication}}
+                                    </li>
+                                        @endforeach
+                                </ul>
+                            </section>
+                            <section class="section education">
+                                <h1 class="title is-3">
+                                    Education
+                                </h1>
+                                <ul>
+                                    @foreach($cv->education as $educationItem)
+                                    <li>
+                                        <article>
+                                            <h1 class="title is-5">{{$educationItem['institution']}}</h1>
+                                            <ul>
+                                                @foreach($educationItem['courses'] as $course)
+                                                    <li>
+                                                        {{$course}}
+                                                    </li>
+                                                @endforeach
+                                            </ul>
+                                        </article>
+                                    </li>
+                                        @endforeach
+                                </ul>
+                            </section>
+                            <section class="section skills">
+                                <h1 class="title is-3">Skills</h1>
+                                <ul>
+                                    @foreach($cv->skills as $skill)
+                                        <li>
+                                            <p>{{$skill}}</p>
+                                        </li>
+                                    @endforeach
+                                </ul>
                             </section>
 
                         </div>

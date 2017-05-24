@@ -8,6 +8,34 @@ class CV
 {
     public $about;
     public $experiences;
+    public $education = [
+        [
+            'institution' => 'Manchester University',
+            'courses' => ['Physics with Technological Physics']
+        ],
+        [
+            'institution' => 'Headlands School and Community Science College',
+            'courses' => [
+                'A Levels: Physics, Maths, Music Technology',
+                'GCSES: 11 A-B Grade including Maths, Science and English'
+                ]
+        ]
+    ];
+
+    public $skills = [
+        'Familiar with most frontend javascript frameworks including AngularJS, Angular(2/4), VueJS and React',
+        'Experience with Puppet, Jenkins and Bitbucket Pipelines',
+        'Highly skilled with the linux commandline (Bash and ZSH)',
+        'Advanced user of GIT',
+        'Comfortable with AWS and related cloud based technologies including Microsoft Azure',
+        'Some knowledge of IIS and Microsoft Windows Server',
+        'Experience with Gulp, Grunt and Webpack'
+    ];
+
+    public $publications = [
+        'Mastering Laravel. Packt Pub 2014. Technical Reviewer'
+    ];
+
     public function __construct() {
         $this->about = $this->about();
         $this->experiences = Experience::all();
