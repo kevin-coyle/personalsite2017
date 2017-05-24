@@ -20,5 +20,6 @@ Route::get('/about', function() {
 });
 Auth::routes();
 
+Route::get('/cv', 'CVController@show');
 
 Route::get('/home', 'HomeController@index');
